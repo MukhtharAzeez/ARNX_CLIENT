@@ -17,7 +17,7 @@ function DashBoard() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:4000/get-all-products')
+        fetch('https://arnxbackend.labonnz.club/get-all-products')
             .then(response => response.json())
             .then(json => setData(json.slice(0, 14)))
     }, [])

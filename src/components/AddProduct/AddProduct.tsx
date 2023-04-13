@@ -21,7 +21,7 @@ function AddProduct() {
 
   useEffect(()=>{
     if(image.length > 0 && image.length ===  fileLength){
-      fetch("http://localhost:4000/add-a-product", {
+      fetch("https://arnxbackend.labonnz.club/add-a-product", {
         method: "POST",
         body: JSON.stringify({
           name,
